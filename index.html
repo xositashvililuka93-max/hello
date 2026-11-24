@@ -1,10 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding Invitation | Alex & Taylor</title>
+  <meta name="theme-color" content="#eee9e1">
+  <meta name="description" content="ალექსისა და ტეილორის საქორწინო მოსაწვევი. გეპატიჟებით ჩვენი განსაკუთრებული დღის აღსანიშნავად.">
+  <title>საქორწინო მოსაწვევი | Alex & Taylor</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,9 +17,9 @@
 
       <div class="top-decoration">✦</div>
 
-      <p class="small-heading">TOGETHER WITH THEIR FAMILIES</p>
+      <p class="small-heading">ოჯახებთან ერთად</p>
 
-      <p class="invitation-title">You are invited to celebrate</p>
+      <p class="invitation-title">გეპატიჟებით ჩვენი სიყვარულის აღსანიშნავად</p>
 
       <h1 class="couple-names">
         Alex <span>&</span> Taylor
@@ -30,52 +32,78 @@
       </div>
 
       <p class="invitation-message">
-        We joyfully invite you to join us as we begin
-        our journey together as one.
+        დიდი სიხარულით გეპატიჟებით, რათა ერთად აღვნიშნოთ
+        ჩვენი ცხოვრების ახალი ეტაპის დასაწყისი.
       </p>
 
       <div class="wedding-details">
+
         <div class="detail">
-          <span class="detail-label">DATE</span>
-          <h2>June 20, 2027</h2>
-          <p>Saturday</p>
+          <span class="detail-label">თარიღი</span>
+          <h2>20 ივნისი, 2027</h2>
+          <p>კვირა</p>
         </div>
 
         <div class="detail-divider"></div>
 
         <div class="detail">
-          <span class="detail-label">TIME</span>
-          <h2>16:00 PM</h2>
-          <p>Wedding Ceremony</p>
+          <span class="detail-label">დრო</span>
+          <h2>16:00</h2>
+          <p>საქორწინო ცერემონია</p>
         </div>
+
       </div>
 
       <div class="venue">
-        <span class="detail-label">LOCATION</span>
+        <span class="detail-label">ადგილმდებარეობა</span>
         <h2>The Garden Estate</h2>
-        <p>Beautiful Gardens, Tbilisi, Georgia</p>
+        <p>თბილისი, საქართველო</p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=The+Garden+Estate+Tbilisi+Georgia"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="map-button"
+        >
+          რუკაზე ნახვა
+        </a>
+      </div>
+
+      <div class="countdown-section">
+        <h2>ქორწილამდე დარჩა</h2>
+        <div id="countdown" class="countdown"></div>
       </div>
 
       <div class="bottom-decoration">❦</div>
 
       <div class="rsvp-section">
-        <h2>Will you join us?</h2>
-        <p>Please let us know if you can celebrate with us.</p>
+
+        <h2>შემოგვიერთდებით?</h2>
+
+        <p>
+          გთხოვთ, შეგვატყობინოთ, შეძლებთ თუ არა ჩვენთან ერთად
+          ამ დღის აღნიშვნას.
+        </p>
 
         <div class="rsvp-buttons">
+
           <button id="acceptButton" class="rsvp-button accept">
-            Accept Invitation
+            სიამოვნებით მოვალ
           </button>
 
           <button id="declineButton" class="rsvp-button decline">
-            Decline
+            ვერ მოვდივარ
           </button>
+
         </div>
 
         <p id="rsvpMessage" class="rsvp-message" aria-live="polite"></p>
+
       </div>
 
-      <p class="closing-text">WE CAN'T WAIT TO CELEBRATE WITH YOU</p>
+      <p class="closing-text">
+        მოუთმენლად ველით თქვენთან ერთად აღნიშვნას
+      </p>
 
     </div>
 

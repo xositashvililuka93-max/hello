@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Montserrat', sans-serif;
   background-color: #eee9e1;
   color: #554b43;
 }
@@ -46,13 +46,13 @@ body {
 
 .small-heading {
   font-size: 10px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: #9b8069;
   margin-bottom: 25px;
 }
 
 .invitation-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif Georgian', 'Playfair Display', serif;
   font-size: 23px;
   font-style: italic;
   color: #85715e;
@@ -60,7 +60,7 @@ body {
 }
 
 .couple-names {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Noto Serif Georgian', serif;
   font-size: clamp(42px, 8vw, 65px);
   font-weight: 400;
   color: #57483d;
@@ -112,14 +112,14 @@ body {
 .detail-label {
   display: block;
   font-size: 10px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: #aa8b70;
   margin-bottom: 12px;
 }
 
 .detail h2,
 .venue h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif Georgian', 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 500;
   color: #57483d;
@@ -155,7 +155,7 @@ body {
 }
 
 .rsvp-section h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif Georgian', 'Playfair Display', serif;
   font-size: 25px;
   font-weight: 500;
   color: #57483d;
@@ -178,9 +178,9 @@ body {
 .rsvp-button {
   padding: 13px 22px;
   border: 1px solid #a88a70;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans Georgian', 'Montserrat', sans-serif;
   font-size: 11px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -210,13 +210,15 @@ body {
   margin-top: 18px;
   color: #8b725e;
   font-size: 12px;
+  line-height: 1.8;
 }
 
 .closing-text {
-  font-size: 9px;
-  letter-spacing: 3px;
+  font-size: 10px;
+  letter-spacing: 1px;
   color: #aa8b70;
   margin-top: 30px;
+  line-height: 1.8;
 }
 
 @media (max-width: 550px) {
@@ -229,7 +231,7 @@ body {
   }
 
   .small-heading {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 9px;
   }
 
@@ -256,4 +258,72 @@ body {
   .rsvp-button {
     width: 100%;
   }
+}
+
+
+.countdown-section {
+  margin: 35px 0;
+  padding: 25px 10px;
+  border-top: 1px solid #e8ddd1;
+  border-bottom: 1px solid #e8ddd1;
+}
+
+.countdown-section h2 {
+  font-family: 'Noto Serif Georgian', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #57483d;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  min-width: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.countdown-item strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #8b725e;
+}
+
+.countdown-item span {
+  font-size: 11px;
+  color: #95877b;
+}
+
+.rsvp-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+.map-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 11px 24px;
+  border: 1px solid #a88a70;
+  background-color: transparent;
+  color: #806b58;
+  text-decoration: none;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.map-button:hover {
+  background-color: #8b725e;
+  color: white;
+  transform: translateY(-2px);
 }
