@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee9e1;
+  color: #554b43;
+}
+
+.invitation-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background:
+    radial-gradient(circle at top left, #e5d9ce, transparent 45%),
+    radial-gradient(circle at bottom right, #ddd6c8, transparent 45%),
+    #eee9e1;
+}
+
+.invitation-card {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  background-color: #fffdf8;
+  padding: 65px 55px;
+  text-align: center;
+  border: 1px solid #d7c5ad;
+  outline: 1px solid #d7c5ad;
+  outline-offset: 8px;
+  box-shadow: 0 20px 60px rgba(73, 57, 40, 0.12);
+}
+
+.top-decoration {
+  color: #ad8766;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.small-heading {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #9b8069;
+  margin-bottom: 25px;
+}
+
+.invitation-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #85715e;
+  margin-bottom: 15px;
+}
+
+.couple-names {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 8vw, 65px);
+  font-weight: 400;
+  color: #57483d;
+  line-height: 1.2;
+}
+
+.couple-names span {
+  color: #b18b70;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.floral-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  color: #b18b70;
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+.floral-divider span {
+  width: 65px;
+  height: 1px;
+  background-color: #d6c2aa;
+}
+
+.invitation-message {
+  max-width: 370px;
+  margin: 0 auto 35px;
+  font-size: 13px;
+  line-height: 2;
+  color: #82766a;
+}
+
+.wedding-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  margin: 35px 0;
+}
+
+.detail {
+  min-width: 130px;
+}
+
+.detail-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #aa8b70;
+  margin-bottom: 12px;
+}
+
+.detail h2,
+.venue h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #57483d;
+  margin-bottom: 8px;
+}
+
+.detail p,
+.venue p {
+  font-size: 11px;
+  color: #95877b;
+}
+
+.detail-divider {
+  height: 65px;
+  width: 1px;
+  background-color: #d9cbbd;
+}
+
+.venue {
+  margin: 35px 0;
+}
+
+.bottom-decoration {
+  font-size: 30px;
+  color: #b18b70;
+  margin: 25px 0;
+}
+
+.rsvp-section {
+  border-top: 1px solid #e8ddd1;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+.rsvp-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #57483d;
+  margin-bottom: 10px;
+}
+
+.rsvp-section > p {
+  font-size: 12px;
+  color: #95877b;
+  line-height: 1.8;
+}
+
+.rsvp-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.rsvp-button {
+  padding: 13px 22px;
+  border: 1px solid #a88a70;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accept {
+  background-color: #8b725e;
+  color: white;
+}
+
+.accept:hover {
+  background-color: #6f5745;
+  transform: translateY(-2px);
+}
+
+.decline {
+  background-color: transparent;
+  color: #806b58;
+}
+
+.decline:hover {
+  background-color: #eee6dc;
+  transform: translateY(-2px);
+}
+
+.rsvp-message {
+  min-height: 22px;
+  margin-top: 18px;
+  color: #8b725e;
+  font-size: 12px;
+}
+
+.closing-text {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #aa8b70;
+  margin-top: 30px;
+}
+
+@media (max-width: 550px) {
+  .invitation-wrapper {
+    padding: 30px 20px;
+  }
+
+  .invitation-card {
+    padding: 45px 22px;
+  }
+
+  .small-heading {
+    letter-spacing: 2px;
+    font-size: 9px;
+  }
+
+  .invitation-title {
+    font-size: 19px;
+  }
+
+  .wedding-details {
+    gap: 15px;
+  }
+
+  .detail {
+    min-width: 0;
+  }
+
+  .detail h2 {
+    font-size: 17px;
+  }
+
+  .rsvp-buttons {
+    flex-direction: column;
+  }
+
+  .rsvp-button {
+    width: 100%;
+  }
+}
